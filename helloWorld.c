@@ -21,7 +21,7 @@ int main() {
 
     printf("My name is %s and I am %d years old.\n", name, age);
 
-    strcopy(name, "Dave Grohl");
+    strcpy(name, "Dave Grohl");
     age = 47;
 
     printf("%s is %d years old\n", name, age);
