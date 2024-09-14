@@ -12,9 +12,9 @@ int main() {
     scanf("%d", &age);
     // Do something with the info
     if (age <= 16) {
-        printf("\nYou can't drive\n");
+        printf("You can't drive\n\n");
     } else {
-        printf("\nYou can drive\n");
+        printf("You can drive\n\n");
     }
 
     float gpa;
@@ -22,12 +22,22 @@ int main() {
     scanf("%f", &gpa);
 
     if(gpa >= 4.0) {
-        printf("\nNiiiiiiice  😎😎😎😎\n");
+        printf("Niiiiiiice  😎😎😎😎\n\n");
     } else {
-        printf("\nLoser\n");
+        printf("Loser\n\n");
     }
 
+    //use getchar() to clear the input buffer.
+    getchar();
 
+
+    //fgets gets a whole line basically
+    char name[20];
+    printf("Enter your name: ");
+    fgets(name, sizeof(name), stdin);
+
+
+    printf("Nice name, %s\n\n", name);
 
     return 0;
 }
