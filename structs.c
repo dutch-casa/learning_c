@@ -10,13 +10,8 @@ struct Student {
     double gpa;
 };
 
-void studentToString(struct Student student) {
-    printf("Name: %s\n", student.name);
-    printf("Age: %d\n", student.age);
-    printf("GPA: %f\n", student.gpa);
-    printf("Major: %s\n", student.major);
-}
-
+//function prototype
+void studentToString(struct Student student);
 
 int main() {
     struct Student students[] = {
@@ -32,3 +27,9 @@ int main() {
     return 0;
 }
 
+void studentToString(struct Student student) {
+    printf("Name: %s\n", student.name);
+    printf("Age: %d\n", student.age);
+    printf("GPA: %.2f\n", student.gpa);
+    printf("Major: %s\n", student.major);
+}
