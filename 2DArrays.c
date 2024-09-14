@@ -18,4 +18,12 @@ int main() {
     scanf("%d", &c2);
     printf("Value: %d\n", nums[c1][c2]);
 
+    //Nested loop
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 2; j++) {
+            printf("%d ", nums[i][j]);
+        }
+        printf("\n");
+    }   
+
 }
