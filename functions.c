@@ -7,14 +7,17 @@
 */
 
 //function prototypes
-void sayHelloThere();
+void sayHelloThere(char name[]);
 
 int main() {
-    sayHelloThere();
+    char inputName[20];
+    printf("What is your name: ");
+    fgets(inputName, sizeof(inputName), stdin);
+    sayHelloThere(inputName);
     return 0;
 }
 
 //To use a function you have to call it in main
-void sayHelloThere() {
-    printf("Hello there!\n");
+void sayHelloThere(char name[]) {
+    printf("Hello there, %s", name);
 }
