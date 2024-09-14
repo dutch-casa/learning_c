@@ -24,7 +24,7 @@ int main() {
     strcopy(name, "Dave Grohl");
     age = 47;
 
-    printf("%s is %d years old\n", name2, age);
+    printf("%s is %d years old\n", name, age);
 
     return 0;
 }
