@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 int main() {
     printf("Hello, World!\n");
@@ -22,10 +21,10 @@ int main() {
 
     printf("My name is %s and I am %d years old.\n", name, age);
 
-    strcpy(name, "Dave Grohl");
+    char name2[] = "Dave Grohl";
     age = 47;
 
-    printf("%s is %d years old\n", name, age);
+    printf("%s is %d years old\n", name2, age);
 
     return 0;
 }
